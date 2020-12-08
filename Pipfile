@@ -18,6 +18,7 @@ sqlparse = "==0.4.1"
 virtualenv = "==20.0.33"
 virtualenv-clone = "==0.5.4"
 Django = "==3.1.4"
+gunicorn = "*"
 
 [requires]
 python_version = "3.8"
