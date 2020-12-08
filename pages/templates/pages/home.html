@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Endpoints</title>
+</head>
+<body>
+
+<h1>API Endpoints</h1>
+
+<ul>
+    <li><a href="{% url 'product' %}">Product</a></li>
+    <li><a href="{% url 'customer' %}">Customer</a></li>
+    <li><a href="{% url 'order' %}">Order</a></li>
+</ul>
+
+{% block content %}
+
+{% endblock %}
+
+<!--<uL>-->
+<!--    <li>-->
+<!--        <h3>Product</h3>-->
+<!--        <h4>List View:</h4>-->
+<!--        <p><a href="{% url 'product_list' %}">Products</a></p>-->
+<!--        <h4>Detail View:</h4>-->
+
+<!--        {% for product in products %}-->
+<!--        <p><a href="{% url 'product_detail' pk=product.pk %}">Product # {{ product.pk }}</a></p>-->
+<!--        {% endfor %}-->
+<!--    </li>-->
+
+<!--    <li>-->
+<!--        <h3>Customer</h3>-->
+<!--        <h4>List View:</h4>-->
+<!--        <p><a href="{% url 'customer_list' %}">Customers</a></p>-->
+<!--        <h4>Detail View:</h4>-->
+
+<!--        {% for customer in customers %}-->
+<!--        <p><a href="{% url 'customer_detail' pk=customer.pk %}">Customer # {{ customer.pk }}</a></p>-->
+<!--        {% endfor %}-->
+
+<!--    </li>-->
+<!--</uL>-->
+</body>
+</html>

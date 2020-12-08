@@ -1,0 +1,18 @@
+{% extends "pages/home.html" %}
+
+{% block content %}
+<h1> Order API</h1>
+
+<uL>
+    <li>
+        <h3>Order</h3>
+        <h4>List View:</h4>
+        <p><a href="{% url 'order_list' %}">Orders</a></p>
+        <h4>Detail View:</h4>
+
+        {% for order in orders %}
+        <p><a href="{% url 'order_detail' pk=order.pk %}">Order # {{ order.pk }}</a></p>
+        {% endfor %}
+    </li>
+</uL>
+{% endblock %}

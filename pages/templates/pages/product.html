@@ -1,0 +1,18 @@
+{% extends "pages/home.html" %}
+
+{% block content %}
+<h1> Product API</h1>
+
+<uL>
+    <li>
+        <h3>Product</h3>
+        <h4>List View:</h4>
+        <p><a href="{% url 'product_list' %}">Products</a></p>
+        <h4>Detail View:</h4>
+
+        {% for product in products %}
+        <p><a href="{% url 'product_detail' pk=product.pk %}">Product # {{ product.pk }}</a></p>
+        {% endfor %}
+    </li>
+</uL>
+{% endblock %}
